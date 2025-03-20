@@ -1,9 +1,9 @@
-# Spotify-ETL
+# Job Search and Application Tracker
 
-## Purpose
-This data pipeline is designed to collect, process, and analyze Spotify data, utilizing various technologies for different stages of the pipeline. The workflow includes extracting data from a blob storage containing Spotify data, transforming it using Azure Databricks, orchestrating the pipeline with Azure Data Factory, and finally storing the processed data in an SQL database. The end goal is to enable seamless integration with Power BI for data visualization and analysis.
+## Project Description
+A **Microsoft Power Platform** solution that streamlines job searching and application tracking. The system integrates **Power Apps, Power Automate, SharePoint, and Power BI** to provide a seamless experience for users. It fetches real-time job listings from the **Jooble API (REST API integration)**, allows users to save and track applications in **SharePoint Lists**, and automates status updates using **Power Automate**. The application also connects to **Power BI via a Streaming Data API**, offering real-time analytics on job applications. Designed with **security and access control**, this project showcases expertise in **low-code development, automation, and data visualization**..
 
-## Architecture
+## Solution Architecture
 ![Architecture-1](https://github.com/kingsley-123/Spotify-ETL-/assets/63650573/bd653b16-6473-47cb-be6a-c46301bd12d3)
 
 ## Data Flow
