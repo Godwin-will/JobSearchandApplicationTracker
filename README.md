@@ -1,30 +1,94 @@
 # Job Search and Application Tracker
 
-## Project Description
+## Project Overview
 A **Microsoft Power Platform** solution that streamlines job searching and application tracking. The system integrates **Power Apps, Power Automate, SharePoint, and Power BI** to provide a seamless experience for users. It fetches real-time job listings from the **Jooble API (REST API integration)**, allows users to save and track applications in **SharePoint Lists**, and automates status updates using **Power Automate**. The application also connects to **Power BI via a Streaming Data API**, offering real-time analytics on job applications. Designed with **security and access control**, this project showcases expertise in **low-code development, automation, and data visualization**..
+
+
+## **Business Use Case:**  
+
+### **Problem Statement**  
+Job seekers often struggle with:  
+- Tracking their job applications and follow-ups efficiently.  
+- Identifying patterns in their job search performance.  
+
+### **Solution**  
+This **Microsoft Power Platform** solution integrates **Power Apps, Power Automate, SharePoint, and Power BI** to:  
+- Search for jobs in real-time via Jooble API within Power Apps.  
+- Save and track applications in SharePoint Lists.  
+- Automate status updates using Power Automate.  
+- Visualize job application trends in Power BI, showing which roles they are more likely to get a job in.  
+
+### **Business Benefits**  
+✅ Streamlines job tracking and reduces manual effort.  
+✅ Helps users focus on high-success job titles based on data insights.  
+✅ Provides real-time performance analytics to refine job search strategy.  
+
+In general, this solution empowers job seekers with data-driven insights, allowing them to optimize their job search efforts effectively
+
 
 ## Solution Architecture
 ![Architecture-1](https://github.com/Godwin-will/JobSearchandApplicationTracker/blob/main/jobsearcharchi2.png)
 
+
 ## Data Flow
-1. **Data Extraction:** Azure Data Factory extracts data from the blob storage containing Spotify data.
-2. **Data Transformation:** Azure Databricks performs data transformation and enrichment tasks on the extracted Spotify data.
-3. **Data Orchestration:** Azure Data Factory orchestrates the entire data pipeline, ensuring smooth transitions between stages.
-4. **Data Storage:** Processed data is stored in Azure Data Lake Storage for flexibility and scalability.
-5. **Data Loading:** Data is loaded from Data Lake Storage into a SQL database for structured storage and easy query access.
-6. **Data Visualization:** Power BI connects to the SQL database, allowing for interactive and insightful data visualization.
 
-## Technologies Used
-- **Azure Data Factory:** Orchestrates and manages the data pipeline.
-- **Azure Databricks:** Executes data transformation tasks efficiently.
-- **Azure Data Lake Storage:** Serves as a scalable and flexible storage solution for processed data.
-- **SQL Database:** Stores the structured data for easy query access.
-- **Power BI:** Connects to the SQL database for data visualization.
+1. **Data Extraction:** Power Automate extracts real-time job listings from the **Jooble API (REST API integration)** based on user input in **Power Apps**.  
+2. **Data Processing:** Extracted job data (Job Title, Location, and Job Link) is processed and formatted within **Power Automate** before being sent to **Power Apps** for display.  
+3. **Data Storage:** Users save job applications via a form in **Power Apps**, and the details (job title, company, application status, etc.) are stored in **SharePoint Lists** for tracking.  
+4. **Data Automation:** Power Automate updates and modifies job application statuses dynamically in **SharePoint Lists**, ensuring real-time data consistency.  
+5. **Data Loading:** SharePoint List data is connected to **Power BI** via a Streaming Data API for continuous updates and real-time analytics.  
+6. **Data Visualization:** Power BI generates interactive dashboards to provide insights into application status, success rates, and job search trends.
 
-## Data Model
-The data model includes tables relevant to Spotify data, allowing for efficient analysis in Power BI. Specific entities may include track information, artist details, and user engagement metrics.
 
-![data model-2](https://github.com/kingsley-123/Spotify-ETL-/assets/63650573/98de181c-df8b-4f83-a047-4cf061d519f4)
+## Technologies Used  
+- **Power Apps:** Provides a user-friendly interface for job searching and application tracking.  
+- **Power Automate:** Automates job data extraction, processing, and updates from Jooble API to Power Apps and SharePoint.  
+- **SharePoint Lists:** Stores job application details, statuses, and updates for easy access and tracking.  
+- **REST API (Jooble API):** Fetches real-time job listings based on user input in Power Apps.  
+- **Power BI:** Connects to SharePoint Lists via a Streaming Data API for real-time job application analytics and visualization.
+  
+
+## **Key Features**  
+
+🔹 **Job Search Integration** – Search for real-time job listings using the **Jooble API** directly within Power Apps.  
+🔹 **Application Tracking** – Save job applications in **SharePoint Lists** and update statuses dynamically.  
+🔹 **Automated Updates** – Use **Power Automate** to modify and manage job application statuses automatically.  
+🔹 **Real-Time Data Visualization** – **Power BI dashboards** provide insights into job search performance, including rejection vs. interview trends.  
+🔹 **User-Friendly Interface** – Intuitive **Power Apps** UI allows seamless job search, tracking, and management.  
+🔹 **Data-Driven Decision Making** – Helps job seekers focus on job titles with higher success rates based on application outcomes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## ETL Pipeline
 The ETL pipeline consists of the following key tasks:
