@@ -59,7 +59,7 @@ In general, this solution empowers job seekers with data-driven insights, allowi
 
 
 
-
+![Image](https://github.com/user-attachments/assets/7d469a9b-e6cd-44a0-b328-11b9cf2a5cce)
 
 
 
