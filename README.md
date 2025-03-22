@@ -7,11 +7,7 @@ A **Microsoft Power Platform** solution that streamlines job searching and appli
 ## **Business Use Case:**  
 
 ### **Problem Statement**  
-Since completing my master's thesis in January 2025, I have applied to numerous job openings and had a couple of interviews but I have faced challenges in effectively managing my job applications, tracking application statuses, remembering follow-up dates, and identifying which job roles or industries yield more interview opportunities. Interestingly from my research, I found that **59% of job seekers find the job search process as time-consuming as a full-time job**, and **77% lose track of crucial follow-up opportunities**, leading to missed chances and inefficiencies as stated by an Article published by ResponseSource. Therefore, I decided to develop a solution that streamlines application tracking and provides insights into job search performance.
-
-Job seekers often struggle with:  
-- Tracking their job applications and follow-ups efficiently.  
-- Identifying patterns in their job search performance.  
+Since completing my master's thesis in January 2025, I have applied to numerous job openings and had a couple of interviews but I have faced challenges in effectively managing my job applications, tracking application statuses, remembering follow-up dates, and identifying which job roles or industries yielded me more interview opportunities. Interestingly from my research, I found that **59% of job seekers find the job search process as time-consuming as a full-time job**, and **77% lose track of crucial follow-up opportunities**, leading to missed chances and inefficiencies as stated by an Article published by ResponseSource. Therefore, I decided to develop a solution that streamlines application tracking and provides insights into job search performance.
 
 ### **Solution**  
 This **Microsoft Power Platform** solution integrates **Power Apps, Power Automate, SharePoint, and Power BI** to:  
@@ -60,8 +56,8 @@ In general, this solution empowers job seekers with data-driven insights, allowi
 🔹 **Data-Driven Decision Making** – Helps job seekers focus on job titles with higher success rates based on application outcomes.
 
 
+## **User Interface**  
 
-![Image](https://github.com/user-attachments/assets/7d469a9b-e6cd-44a0-b328-11b9cf2a5cce)
 
 
 
