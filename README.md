@@ -106,9 +106,11 @@ The Job Search & Application Tracker is designed with a user-friendly interface,
 - The dashboard is powered by **Power BI**, connected to the SharePoint list via a **streaming data API.**  
 - Key insights include:  
   - **Number of applications sent over time**  
-  - **Job roles and industries where the user gets more interviews**  
+  - **Job roles and industries where the user gets more interviews**
   - **Application success rate (Interviews & Offers vs. Rejections)**  
   - **Follow-up reminders based on pending applications**  
-- The goal is to help users optimize their job search strategy by identifying trends in their applications.  
+- The goal is to help users optimize their job search strategy by identifying trends in their applications.
+
+![Image](https://github.com/user-attachments/assets/248a8cf5-f3d0-4220-b9d2-9f90baba23e6)
 
 
