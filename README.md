@@ -1,13 +1,18 @@
 # Job Search and Application Tracker
 
 ## Project Overview
-A **Microsoft Power Platform** solution that streamlines job searching and application tracking. The system integrates **Power Apps, Power Automate, SharePoint, and Power BI** to provide a seamless experience for users. It fetches real-time job listings from the **Jooble API (REST API integration)**, allows users to save and track applications in **SharePoint Lists**, and automates status updates using **Power Automate**. The application also connects to **Power BI via a Streaming Data API**, offering real-time analytics on job applications. Designed with **security and access control**, this project showcases expertise in **low-code development, automation, and data visualization**..
+<p align="justify">
+A <b>Microsoft Power Platform</b> solution that streamlines job searching and application tracking. The system integrates <b>Power Apps, Power Automate, SharePoint, and Power BI</b> to provide a seamless experience for users. It fetches real-time job listings from the <b>Jooble API (REST API integration)</b>, allows users to save and track applications in <b>SharePoint Lists</b>, and automates status updates using <b>Power Automate</b>. The application also connects to <b>Power BI via a Streaming Data API</b>, offering real-time analytics on job applications. Designed with <b>security and access control</b>, this project showcases expertise in <b>low-code development, automation, and data visualization</b>.
+</p>
 
 
 ## **Business Use Case:**  
 
 ### **Problem Statement**  
-Since completing my master's thesis in January 2025, I have applied to numerous job openings and had a couple of interviews but I have faced challenges in effectively managing my job applications, tracking application statuses, remembering follow-up dates, and identifying which job roles or industries yielded me more interview opportunities. Interestingly from my research, I found that **59% of job seekers find the job search process as time-consuming as a full-time job**, and **77% lose track of crucial follow-up opportunities**, leading to missed chances and inefficiencies as stated by an Article published by ResponseSource. Therefore, I decided to develop a solution that streamlines application tracking and provides insights into job search performance.
+<p align="justify">
+Since completing my master's thesis in January 2025, I have applied to numerous job openings and had a couple of interviews but I have faced challenges in effectively managing my job applications, tracking application statuses, remembering follow-up dates, and identifying which job roles or industries yielded me more interview opportunities. Interestingly from my research, I found that <b>59% of job seekers find the job search process as time-consuming as a full-time job</b>, and <b>77% lose track of crucial follow-up opportunities</b>, leading to missed chances and inefficiencies as stated by an Article published by ResponseSource. Therefore, I decided to develop a solution that streamlines application tracking and provides insights into job search performance.
+</p>
+
 
 ### **Solution**  
 This **Microsoft Power Platform** solution integrates **Power Apps, Power Automate, SharePoint, and Power BI** to:  
@@ -58,63 +63,52 @@ In general, this solution empowers job seekers with data-driven insights, allowi
 
 ## **User Interface**  
 
+The Job Search & Application Tracker is designed with a user-friendly interface, allowing job seekers to seamlessly search for jobs, track applications, and gain insights into their job search performance.  
+
+#### **1. Home Screen (Job Search Page)**  
+- The search bar allows users to input job titles and locations.  
+- A search button triggers the Power Automate flow, fetching job listings via the Jooble API.  
+- The results are displayed in a list format, showing:  
+  - **Job Title**  
+  - **Company Name**  
+  - **Location**  
+  - A **link button (arrow icon)** that directs users to the job application page.  
 
 
+![Image](https://github.com/user-attachments/assets/a21749c9-6f2b-43ec-89ed-feb8f792edeb)
+
+##### Power Automate Flow
+![Image](https://github.com/user-attachments/assets/c244ceb2-fa71-4a5b-ba27-43bcb520b8b0)
 
 
+#### **2. Save Application Page**  
+- Users can save job applications they have applied to using a custom form.  
+- The form captures key details such as:  
+  - **Job Title**  
+  - **Company Name**  
+  - **Application Date**  
+  - **Application Status (e.g., Applied, Interview, Rejected, Offer Received)**  
+- Saved job applications are stored in **SharePoint Lists** for easy tracking.  
+- Users can update the application status as they progress in their job search.  
 
 
+![Image](https://github.com/user-attachments/assets/dafc2873-a798-496d-816e-e1c9c9cc9f98)
+
+##### Power Automate Flow
+![Image](https://github.com/user-attachments/assets/09fee5e9-c678-4007-98cc-73d3ed2af5a0)
+
+##### SharePoint Updated List
+![Image](https://github.com/user-attachments/assets/2fc2f1c7-0537-4fc5-a9ed-5babf1be4e48)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## ETL Pipeline
-The ETL pipeline consists of the following key tasks:
-1. **Data Extraction:**
-   - Extract data from the Spotify blob storage using Azure Data Factory.
-2. **Data Transformation:**
-   - Utilize Azure Databricks to perform necessary transformations on the Spotify data.
-3. **Data Loading:**
-   - Store the processed data in Azure Data Lake Storage for flexibility.
-4. **Data Ingestion:**
-   - Ingest data from Data Lake Storage to SQL Database for structured storage.
-5. **Data Visualization:**
-   - Connect Power BI to the SQL database for interactive data visualization.
-
-![Code-1](https://github.com/kingsley-123/Spotify-ETL-/assets/63650573/fbd48c88-14bd-4cbd-b8c6-c721f98003f4)
-![Code-2](https://github.com/kingsley-123/Spotify-ETL-/assets/63650573/2f4721d4-bb3c-4923-9991-6d42bdf10ccb)
-![Code-3](https://github.com/kingsley-123/Spotify-ETL-/assets/63650573/7da95090-cd9d-4b73-ad7c-1e528cf89cff)
-
-
-## Development Setup
-To set up and run the data pipeline locally, follow these steps:
-- Provision necessary Azure resources, including Data Factory, Databricks, Data Lake Storage, and SQL Database.
-- Configure connections and credentials for each component.
-- Define required environment variables or configuration files.
-- Execute the pipeline using Azure Data Factory triggers or manual execution.
-
-  
-## Spotify Visualization 
-![Spotify Report-1](https://github.com/kingsley-123/Spotify-ETL-/assets/63650573/40d8290a-20b5-430b-aaea-46181dd1188c)
+#### **3. Insights Dashboard**  
+- Users can view real-time analytics on their job search performance.  
+- The dashboard is powered by **Power BI**, connected to the SharePoint list via a **streaming data API.**  
+- Key insights include:  
+  - **Number of applications sent over time**  
+  - **Job roles and industries where the user gets more interviews**  
+  - **Application success rate (Interviews & Offers vs. Rejections)**  
+  - **Follow-up reminders based on pending applications**  
+- The goal is to help users optimize their job search strategy by identifying trends in their applications.  
 
 
