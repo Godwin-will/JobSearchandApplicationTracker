@@ -7,6 +7,8 @@ A **Microsoft Power Platform** solution that streamlines job searching and appli
 ## **Business Use Case:**  
 
 ### **Problem Statement**  
+Since completing my master's thesis in January 2025, I have applied to numerous job openings and had a couple of interviews but I have faced challenges in effectively managing my job applications, tracking application statuses, remembering follow-up dates, and identifying which job roles or industries yield more interview opportunities. Interestingly from my research, I found that **59% of job seekers find the job search process as time-consuming as a full-time job**, and **77% lose track of crucial follow-up opportunities**, leading to missed chances and inefficiencies as stated by an Article published by ResponseSource. Therefore, I decided to develop a solution that streamlines application tracking and provides insights into job search performance.
+
 Job seekers often struggle with:  
 - Tracking their job applications and follow-ups efficiently.  
 - Identifying patterns in their job search performance.  
